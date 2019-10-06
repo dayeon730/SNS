@@ -35,7 +35,7 @@ ol{
   border-right:1px solid gray;
   width:100px;
   margin:0;
-  padding:20px;
+  padding:30px;
 }
 #grid ol{
     padding-left:33px;
@@ -44,8 +44,19 @@ ol{
   display:grid;
   grid-template-columns: 150px 1fr;
 }
-#article{
-  padding:25px;
+#grid #article{
+  padding-left:25px;
+}
+@media(max-width:800px){
+  #grid{
+    display:block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1{
+    border-bottom:none;
+  }
 }
   </style>
 </head>
@@ -62,7 +73,8 @@ ol{
       <h2>방명록<br>
       Making Virtual SNS !</br></h2>
       <p> 방명록을 위한 페이지</p>
-
+    </div>
+    </div>
     <p>
 <script>
 
@@ -76,7 +88,6 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
   </p>
-</div>
-</div>
+
 </body>
 </hmtl>

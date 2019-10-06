@@ -15,10 +15,7 @@
 </script>
   </p>
   <style>
-  a {
-    color:black;
-    text-decoration: none;
-  }
+
 
   h1{
     font-size:60px;
@@ -27,7 +24,49 @@
   h4{
   text-align:right;
   }
-
+  body{
+    margin:0;
+  }
+.saw {
+  color:gray;
+}
+#active{
+  color:red;
+}
+h1{
+  font-size:45px;
+  text-align:center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+ol{
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding:30px;
+}
+#grid ol{
+    padding-left:33px;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid #article{
+  padding-left:25px;
+}
+@media(max-width:800px){
+  #grid{
+    display:block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1{
+    border-bottom:none;
+  }
+}
   </style>
 </head>
 
@@ -35,19 +74,21 @@
     <a href="https://www.instagram.com" target="_blank" title="인스타">  <img src="insta.PNG" width="200"></a>
     <a href="https://www.facebook.com" target="_blank" title="페이스북"><img src="face.PNG" width="200"></a>
     <a href="  https://twitter.com" target="_blank" title="트위터"><img src="twitt.PNG" width="100"></a>
-  <h1>SNS 만들기</h1>
+<!--  <h1>SNS 만들기</h1>
   <h4>소프트웨어 공학 과제하기 - 웹 서버 만들기<br>
     html로 웹 페이지 제작하기</br>
-    <a style="color:brown; text-decoration:underline;">2017162029 배다연</h4>
-
+    <a style="color:brown; text-decoration:underline;">2017162029 배다연</h4> -->
+<div id="grid">
   <ol>
     <h3><li> <a href="1.html">HOME</a></li></h3>
     <h3><li><a href="2.html">방명록</a></li></h3>
     <h3><li> <a href="3.html">메세지</a></li></h3>
   </ol>
+  <div id="article"
   <h2>HOME</h2>
   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/fJOVRKmD6nM" frameborder="0"
      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>  </p>
-
+</div>
+</div>
 </body>
